@@ -1,0 +1,12 @@
+{
+  "name": "CryptoWallet",
+  "displayName": "CryptoWallet",
+  "expo": {
+    "name": "CryptoWallet",
+    "slug": "CryptoWallet",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
