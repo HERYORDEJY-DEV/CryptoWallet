@@ -8,12 +8,14 @@ The source code is available in this [Github repo](https://github.com/HERYORDEJY
 
 <strong>1.</strong> Clone the repository
 
-- Open the terminal Command propmp / bash
+- Open the terminal Command propt / bash
 - Enter the the following code in the terminal
 
 ```
   git clone https://github.com/HERYORDEJY-DEV/CryptoWallet.git CryptoWallet
 ```
+
+<strong>Note:</strong><em>The name of the Project Folder is CryptoWallet</em>
 
 <strong>2.</strong> Open a terminal in the project folder
 
