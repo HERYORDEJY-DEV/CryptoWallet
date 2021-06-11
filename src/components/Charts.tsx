@@ -2,73 +2,54 @@ import * as React from 'react';
 import * as RN from 'react-native';
 
 import { RFValue } from 'react-native-responsive-fontsize';
-import {
-  Chart,
-  Line,
-  Area,
-  HorizontalAxis,
-  VerticalAxis,
-  Tooltip,
-} from 'react-native-responsive-linechart';
-// import {
-//   LineChart,
-//   BarChart,
-//   PieChart,
-//   ProgressChart,
-//   ContributionGraph,
-//   StackedBarChart,
-// } from 'react-native-chart-kit';
+import { Chart, Line, Area } from 'react-native-responsive-linechart';
 
 interface Props {
   containerStyle?: RN.ViewStyle;
+  data: { x: number; y: number }[];
 }
 
 interface State {}
 
 const Charts: React.FC<Props> = (props) => {
   return (
-    <Chart
-      style={[
-        { height: 200, width: '100%' },
-        styles.container,
-        props.containerStyle,
-      ]}
-      data={[
-        { x: -2, y: 15 },
-        { x: -1, y: 10 },
-        { x: 0, y: 12 },
-        { x: 1, y: 7 },
-        { x: 2, y: 6 },
-        { x: 3, y: 8 },
-        { x: 4, y: 10 },
-        { x: 5, y: 8 },
-        { x: 6, y: 0 },
-        { x: 7, y: 14 },
-        { x: 8, y: 12 },
-        { x: 9, y: 13.5 },
-        { x: 10, y: 18 },
-      ]}
-      padding={{ left: 40, bottom: 20, right: 20, top: 20 }}
-      xDomain={{ min: 0, max: 10 }}
-      yDomain={{ min: 0, max: 20 }}
-      viewport={{ size: { width: 5 } }}
-    >
-      <Line
-        theme={{
-          stroke: { color: '#f39c12', width: 2 },
-        }}
-        smoothing='bezier'
-      />
-      <Area
-        theme={{
-          gradient: {
-            from: { color: '#f39c12', opacity: 0.4 },
-            to: { color: '#f39c12', opacity: 0 },
-          },
-        }}
-        smoothing='bezier'
-      />
-    </Chart>
+    <>
+      <Chart
+        style={[
+          { height: RFValue(100), width: '100%' },
+          styles.container,
+          props.containerStyle,
+        ]}
+        data={props.data}
+        // padding={{ left: 40, bottom: 20, right: 20, top: 20 }}
+        xDomain={{ min: 0, max: 10 }}
+        yDomain={{ min: 0, max: 20 }}
+        // viewport={{ size: { width: 10,  } }}
+      >
+        <Line
+          theme={{
+            stroke: { color: '#FFFFFF', width: 1 },
+          }}
+          smoothing={'cubic-spline'}
+        />
+        <Area
+          theme={{
+            gradient: {
+              from: { color: '#FFFFFF', opacity: 0.2 },
+              to: { color: '#FFFFFF', opacity: 0 },
+            },
+          }}
+          smoothing={'cubic-spline'}
+        />
+      </Chart>
+      {/* ================================================================ */}
+      {/* <RN.View style={{ backgroundColor: 'black' }}>
+        <ChartPathProvider data={{ points, smoothingStrategy: 'bezier' }}>
+          <ChartPath height={SIZE / 2} stroke='yellow' width={SIZE} />
+          <ChartDot style={{ backgroundColor: 'blue' }} />
+        </ChartPathProvider>
+      </RN.View> */}
+    </>
   );
 };
 

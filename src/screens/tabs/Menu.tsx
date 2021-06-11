@@ -5,7 +5,7 @@ import * as NB from 'native-base';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { background_color, grey_color } from '../../styles/color';
 
-const Home: React.FC = () => {
+const Menu: React.FC = () => {
   return (
     <NB.Container style={styles.container}>
       <RN.StatusBar
@@ -18,13 +18,13 @@ const Home: React.FC = () => {
         style={styles.content}
         contentContainerStyle={styles.contentContainer}
       >
-        <RN.Text style={styles.title}>Home Screen</RN.Text>
+        <RN.Text style={styles.title}>Menu Screen</RN.Text>
       </NB.Content>
     </NB.Container>
   );
 };
 
-export default Home;
+export default Menu;
 
 const styles = RN.StyleSheet.create({
   container: {

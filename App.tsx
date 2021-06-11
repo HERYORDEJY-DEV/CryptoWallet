@@ -1,12 +1,17 @@
 import React from 'react';
 import { useFonts } from 'expo-font';
-
 import { StyleSheet, Text, View, LogBox } from 'react-native';
+
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { setCustomText } from 'react-native-global-props';
 
 import Charts from './src/components/Charts';
 import Transaction from './src/screens/tabs/Transaction';
+import AppNavigation from './src/navigation';
+import Home from './src/screens/tabs/Home';
+import Wallet from './src/screens/tabs/Wallet';
+import Withdraw from './src/screens/stack/CoinInfo';
 
 // console.disableYellowBox = true;
 LogBox.ignoreAllLogs(true);
@@ -37,9 +42,9 @@ export default function App() {
   }
 
   return (
-    <>
-      <Transaction />
-    </>
+    <SafeAreaProvider>
+      <AppNavigation />
+    </SafeAreaProvider>
   );
 }
 
