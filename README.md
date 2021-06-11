@@ -8,7 +8,7 @@ The source code is available in this [Github repo](https://github.com/HERYORDEJY
 
 <strong>1.</strong> Clone the repository
 
-- Open the terminal Command propt / bash
+- Open the terminal Command prompt / bash
 - Enter the the following code in the terminal
 
 ```
