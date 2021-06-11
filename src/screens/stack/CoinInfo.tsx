@@ -10,7 +10,6 @@ import {
   grey_color,
   red_color,
 } from '../../styles/color';
-import Charts from '../../components/Charts';
 import { topCoinsData } from '../../api/data';
 import ChartStatsBar from '../../components/ChartStatsBar';
 import ChartBig from '../../components/ChartBig';

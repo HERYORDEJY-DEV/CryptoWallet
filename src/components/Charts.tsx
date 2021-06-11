@@ -42,13 +42,6 @@ const Charts: React.FC<Props> = (props) => {
           smoothing={'cubic-spline'}
         />
       </Chart>
-      {/* ================================================================ */}
-      {/* <RN.View style={{ backgroundColor: 'black' }}>
-        <ChartPathProvider data={{ points, smoothingStrategy: 'bezier' }}>
-          <ChartPath height={SIZE / 2} stroke='yellow' width={SIZE} />
-          <ChartDot style={{ backgroundColor: 'blue' }} />
-        </ChartPathProvider>
-      </RN.View> */}
     </>
   );
 };
@@ -58,45 +51,3 @@ export default Charts;
 const styles = RN.StyleSheet.create({
   container: {},
 });
-
-{
-  /* <LineChart
-  bezier
-  data={{
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-    datasets: [
-      {
-        data: [
-          Math.random() * 100,
-          Math.random() * 100,
-          Math.random() * 100,
-          Math.random() * 100,
-          Math.random() * 100,
-          Math.random() * 100,
-        ],
-      },
-    ],
-  }}
-  width={Dimensions.get('window').width} // from react-native
-  height={220}
-  chartConfig={{
-    fillShadowGradient: 'red',
-    fillShadowGradientOpacity: 0.5,
-    backgroundGradientFromOpacity: 0,
-    backgroundGradientToOpacity: 0,
-    color: (opacity = 1) => `#c33455`,
-    labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-    style: {
-      borderRadius: 16,
-      padding: 0,
-      margin: 0,
-    },
-  }}
-  style={{ padding: 0, margin: 0 }}
-  withHorizontalLines={false}
-  withHorizontalLabels={false}
-  withVerticalLines={false}
-  withVerticalLabels={false}
-  withDots={false}
-/>; */
-}
