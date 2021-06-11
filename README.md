@@ -1,6 +1,6 @@
 # Chiji14xchange Application (Mobile Developer) Technical Assessment
 
-###Due 6pm on Friday, 11th June 2021 <br /><br />
+### Due 6pm on Friday, 11th June 2021 <br /><br />
 
 The source code is available in this [Github repo](https://github.com/HERYORDEJY-DEV/CryptoWallet) <br /><br />
 
